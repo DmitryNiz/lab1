@@ -1,17 +1,17 @@
 import static java.lang.Math.*;
 
-public class computer {
+public class Computer {
 
-    public static final int column = 12;
-    public static final int row = 15;
-    
+    public static final int COLUMN = 12;
+    public static final int ROW = 15;
+
     public static void main(String[] args) {
 
         int n[] = {3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25};
-        double x[] = new double[row];
-        double w[][] = new double[column][row];
+        double x[] = new double[ROW];
+        double w[][] = new double[COLUMN][ROW];
 
-        for (int i = 0; i < row; i++) {
+        for (int i = 0; i < ROW; i++) {
             x[i] = (random() * 8 - 6);
         }
         for (int i = 0; i < n.length; i++) {
