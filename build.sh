@@ -1,5 +1,8 @@
 #!/bin/bash
-mkdir lab1
-javac -d lab1 Computer.java
-jar cf Computer.jar -C lab1 .
+
+mkdir -p jararch
+javac -d jararch *.java
+echo "Main-Class: Computer" > manifest.txt
+jar cfm Computer.jar manifest.txt -C jararch .
+rm manifest.txt
 
